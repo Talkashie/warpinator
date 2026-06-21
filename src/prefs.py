@@ -310,7 +310,7 @@ class Preferences():
 
         section = page.add_section(_("File Transfers"))
 
-        widget = GSettingsSwitch(_("Use compression when possible."),
+        widget = GSettingsSwitch(_("Use compression when possible"),
                                  PREFS_SCHEMA, USE_COMPRESSION_KEY,
                                  tooltip=_("Warning: This may have a negative impact on performance on some faster networks."))
         section.add_row(widget)
